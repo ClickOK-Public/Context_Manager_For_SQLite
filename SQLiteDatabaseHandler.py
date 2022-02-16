@@ -77,7 +77,7 @@ def main():
   ;'''
 
   # Using the context manager by passing the SQL query directly to the context manager. Output is passed to Pandas dataframe with a little clunky syntax. Debug info = ON\n")
-  with SQLiteDatabaseHandler("NW2020-test.db", SQL2) as my_db_obj:
+  with SQLiteDatabaseHandler("NW2020-test.db", SQL2, debug=True) as my_db_obj:
     od_obj_output = pd.DataFrame([item for item in my_db_obj[0]], columns=my_db_obj[1])
     print(od_obj_output)
 
