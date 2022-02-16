@@ -8,7 +8,7 @@ Sample database is as provided by Prof. Johan van Niekerk to the "Programming da
 Autmotatically close a cursor connection using Pythons 'with ...' statement.
 All connections enforce referential integrity.
 
-# Background info:
+# Background info
 
 The class takes 1 required attribute parameter.
 It then returns 2 kinds of tuple depending if the optional SQL query is provided when the context managers was called.
